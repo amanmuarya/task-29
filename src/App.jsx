@@ -1,45 +1,41 @@
 import React from 'react';
 
-//      1. Reusable Card Component
+//      Reusable Card Component
+// here to decliyer to titile , img , description .. 
 const Card = ({ title, description, badge, image }) => {
   return (
     <div className="w-80 p-1 rounded-xl bg-gradient-to-br from-pink-500 via-purple-600 to-green-400 hover:-translate-y-1 transition-transform duration-200 ease-in-out cursor-pointer shadow-sm hover:shadow-md">
 
-      {/* Inner Card Content */}
-      <div className="bg-white rounded-lg p-5 h-full flex flex-col gap-4">
-
+      {/* Inner Card Content  and set back ground color and border color */}
+    <div className="bg-white rounded-lg   p-5 h-full flex flex-col    gap-4">
         {/* Top Section: Badge & Title */}
         <div className="flex flex-col gap-2">
           <span className="self-start bg-gray-100 text-gray-800 text-xs font-bold px-3 py-1 rounded-full">
             {badge}
           </span>
           <h3 className="text-xl font-bold text-gray-900 m-0">
-            {title}
-          </h3>
-        </div>
-
-        {/* Middle Section: Image (Card ke bich mein pic) */}
+{title}
+</h3>
+</div>
+{/* Middle Section: Image (Card ke bich mein pic) */}
         <div className="w-full h-40 overflow-hidden rounded-md shadow-sm">
-          <img
-            src={image}
-            alt={title}
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-          />
-        </div>
-
+<img
+src={image}
+alt={title}
+className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+/>
+</div>
         {/* Bottom Section: Description */}
         <p className="text-gray-600 text-sm leading-relaxed m-0">
-          {description}
+{description}
         </p>
-
       </div>
     </div>
   );
 };
-
-// --- 2. Parent Component (Data & Rendering) ---
+//  parent Component 
 export default function App() {
-  // Array of objects me 'image' property add kar di gayi hai
+  // Array of objects me 'image' add kiya hia 
   const cardData = [
     {
       id: 1,
@@ -48,6 +44,7 @@ export default function App() {
       badge: "React",
       image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=500&auto=format&fit=crop&q=60" // React/Frontend placeholder
     },
+    // second card hai ye 
     {
       id: 2,
       title: "Backend Development",
@@ -70,7 +67,7 @@ export default function App() {
       badge: "Python",
       image: "https://st2.depositphotos.com/4021139/5815/i/450/depositphotos_58156479-stock-photo-python-concept.jpg" // Design placeholder
     }
-
+// card no 5. java few information 
     ,
     {
       id: 5,
@@ -111,7 +108,7 @@ export default function App() {
     ,
 
   ];
-
+  // use justify center and gap between to card 8px 
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-8">
       <div className="flex flex-wrap justify-center gap-8">
