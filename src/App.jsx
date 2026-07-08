@@ -50,7 +50,7 @@ export default function App() {
       title: "Backend Development",
       description: "Create robust APIs and manage databases with Node.js or Python.",
       badge: "Node.js",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&auto=format&fit=crop&q=60" // Code/Backend placeholder
+      image: "" // Code/Backend placeholder
     },
     {
       id: 3,
@@ -74,7 +74,7 @@ export default function App() {
       title: " object-oriented language",
       description: "Java is a highly popular, high-level, object-oriented programming language and computing platform",
       badge: "JAVA",
-      image: "https://as1.ftcdn.net/v2/jpg/03/22/70/80/1000_F_322708042_uPQMkUFxMUDnoMatCDb0h3re4wnFlVeV.jpg" // Design placeholder
+      image: "" // Design placeholder
     }, 
     {
       id: 6,
